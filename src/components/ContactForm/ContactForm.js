@@ -80,33 +80,6 @@ const initialValues = {
     number: '',
 }
 
-const InfoInput = styled(Field)`
-    margin-left: 20px;
-    font-size: 25px;
-    padding: 5px 5px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    box-sizing: border-box;
-    border-radius: 4px;
-    cursor: pointer;
-    outline: none;
-
-    &:focus {
-    border-color: #2196f3;
-    transition-property: border-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-`;
-
-const InfoForm = styled(Form)`
-    display: grid;
-`;
-
-const ErrorInfo = styled(ErrorMessage)`
-    margin-left: 10px;
-    font-size: 15px;
-    color: red;
-`;
-
 const ContactForm = ({ onSubmit }) => {
 
     const handleSubmit = (values, {resetForm}) => {
@@ -141,5 +114,32 @@ const ContactForm = ({ onSubmit }) => {
 ContactForm.propTypes = {
     onSubmit: PropTypes.func.isRequired,
 };
+
+const InfoInput = styled(Field)`
+    margin-left: 20px;
+    font-size: 25px;
+    padding: 5px 5px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+
+    &:focus {
+    border-color: #2196f3;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+`;
+
+const InfoForm = styled(Form)`
+    display: grid;
+`;
+
+const ErrorInfo = styled(ErrorMessage)`
+    margin-left: 10px;
+    font-size: 15px;
+    color: red;
+`;
 
 export default ContactForm;
