@@ -64,7 +64,6 @@ class App extends Component {
       <div
         style={{
           height: '100vh',
-          display: 'block',
           display: 'grid',
           justifyContent: 'center',
           alignItems: 'center',
