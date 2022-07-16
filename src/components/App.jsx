@@ -26,8 +26,8 @@ class App extends Component {
       name,
       number,
     }
-    
-    if (contacts.map(contact => contact.name).includes(name)) {
+
+    if (contacts.find(contact => contact.name.toLowerCase() === name.toLowerCase())) {
       alert(`${name} is already in contacts.`)
       return;
     } 
